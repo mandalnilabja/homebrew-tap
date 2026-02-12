@@ -3,7 +3,7 @@ cask "goatway" do
   name "goatway"
   desc "Lightweight, streaming-safe, OpenAI-compatible HTTP proxy for LLM providers"
   homepage "https://github.com/mandalnilabja/goatway"
-  version "0.1.0"
+  version "0.1.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "goatway" do
   on_macos do
     on_intel do
       url "https://github.com/mandalnilabja/goatway/releases/download/v#{version}/goatway_#{version}_darwin_amd64.tar.gz"
-      sha256 "ca4fe27e317af335836b276ea73e8c82add2d09d6341d2cd22cc1f3f89c97f9e"
+      sha256 "e62e6412504c2f7b6f18c67ea7777c1af69795d2068e66690776837012b22211"
     end
     on_arm do
       url "https://github.com/mandalnilabja/goatway/releases/download/v#{version}/goatway_#{version}_darwin_arm64.tar.gz"
-      sha256 "8400bd07c60207cb7b5ecfbb5b52c756144c7a3b0e220e75a37bf03f4e6298bf"
+      sha256 "1242d02cdc089b7e2bfd1032f37b837f22052bc7cfec36a930760d56b4f98fcf"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/mandalnilabja/goatway/releases/download/v#{version}/goatway_#{version}_linux_amd64.tar.gz"
-      sha256 "ead241fc6be811b719e647a608a06da2f6c643f14284ad1f9bfb44fbf85bba6c"
+      sha256 "0fe1a0ce39590b3e2d748494c28b6a3dc3bd15521558f92829c37a6a562bc36d"
     end
     on_arm do
       url "https://github.com/mandalnilabja/goatway/releases/download/v#{version}/goatway_#{version}_linux_arm64.tar.gz"
-      sha256 "ad7e74c403e1969b6afb309d603ea156a04d9ef05f874436937f5750751cb314"
+      sha256 "943f442ecc573e60982c4eca4f4ce407f6c3f9daf05e5cf2045bdbd0df397269"
     end
   end
 
@@ -40,7 +40,7 @@ cask "goatway" do
   end
 
   caveats do
-    "If macOS shows "goatway is damaged", run:"
+    "If macOS shows 'goatway is damaged', run:"
     "  xattr -dr com.apple.quarantine $(which goatway)"
   end
 
